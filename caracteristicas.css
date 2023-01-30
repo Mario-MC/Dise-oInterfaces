@@ -1,0 +1,367 @@
+/*Cambios globlales*/
+
+*{
+    font-family: Poppins;
+    color: #888; 
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+   padding: 15px; 
+  
+}
+
+p,button{
+    font-size: 14px;  
+}
+
+
+/*Alineamos el h1 al centro (Titulo periodico)*/
+h1{
+    text-align: center;
+}
+
+h3,h1{
+    font-weight: 700;
+    font-size: 18px;
+    color: #222;
+}
+
+h3{
+    margin-top: 15px;
+    margin-bottom:45px ;
+}
+
+h2{
+    font-size: 40px;
+    color: #222;
+}
+
+
+/*Header*/ 
+header{
+        border-bottom:1px solid gainsboro ;
+}
+
+
+
+.iconos{
+    display: flex;
+}
+
+.icon{
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    margin: 0;
+}
+
+.lista{
+    display: flex;
+    margin-left: auto;
+}
+
+.posicion{
+    display: flex;
+    flex-direction: column;
+}
+
+.form1 {
+   
+    /* Esquema del formulario */
+    padding: 1em;
+    position: relative;
+    
+}
+
+.input-icon {
+	color: #191919;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+/*Clase usada para los input de search e email*/
+.inpu1{
+    border-radius: 8em;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    /* Tamaño uniforme del campo de texto */
+    width: 100%;
+    height: 30px;
+    padding-left: 17px;
+}
+
+
+input {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+  vertical-align: top;
+}
+
+
+/*Secciones*/
+
+
+/*Ponemos el titulo de la primera noticia de un tamaño mayor */
+#Destac{
+    font-size: 32px;
+    color: #222;
+}
+
+.trending{
+    padding-top: 25px;
+    padding-bottom: 45px;
+    text-align: center;
+}
+.fotos{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+img{
+    margin-bottom:30px;
+}
+
+.principales{
+    
+    width: 100%;
+    
+    border-radius: 8px;
+    
+}
+
+
+/*Hacemos que el texto de categoria y fecha se queden en la misma linea*/
+.union{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*Ponemos en negrita los textos de categoria y nomber del autor*/
+.categoria,.nombre{
+    font-weight:bold ;
+    color: #222;
+}
+
+.fecha{
+    padding-left: 5px;
+}
+
+.author{
+    display: flex;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.author section p {
+    margin: 0;
+}
+
+.foto{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding-right: 13px;
+}
+
+    
+/*Footer*/
+
+footer{
+    height: 340px;
+    /**margin-top: 70px;*/
+    margin-bottom: 70px;
+}
+
+.newsletter{
+    height: 180px;
+    background-color: whitesmoke;
+    padding: -10px;
+}
+
+.separacion{
+    align-self: stretch  ;
+    margin: 15px;
+    padding-top: 35px;
+    overflow: hidden;
+}
+
+.sus{
+    padding-left: 5px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.bot{
+    padding-left: 5px; 
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.boton{
+    width: 100%;
+    border-radius: 7em;
+    height: 40px;
+    background-color: orange;
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    border: 1px solid white; 
+}
+
+.iconitos{
+    display: flex;
+    justify-content: center;
+}
+
+.cuadrito{
+    padding-right: 1px;
+    background-color: gainsboro;
+    border-radius: 1em;
+    height: 50px;
+    width: 50px;
+    justify-content: center;
+    display: flex;
+    margin-right: 5px;
+   
+}
+#inpu2{
+    
+    box-sizing: border-box;
+    border-radius: 10px ;
+    /* Tamaño uniforme del campo de texto */
+    width: 100%;
+    height: 40px;
+    padding-left: 17px;
+}
+
+
+.icon2{
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+}
+
+
+#copy,#terms{
+   text-align: center;
+}
+
+#corazon{
+    height: 30px;
+    width: 30px;
+}
+
+
+/** Secciones media */
+
+@media(min-width: 600px) {
+    
+    .cabecera{
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+       
+     
+    }
+    .cabecera h1{
+        order: -1;
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    .cabecera .iconos{
+        order:-2;
+        margin-top: 10px;
+    }
+
+    .lista{
+        gap:15px;
+        margin-left: 145px;
+    }
+
+
+    .main1,.main2{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: space-between;
+    }
+    
+    main{
+       max-width: 1280px;
+       margin-left: auto;
+       margin-right: auto;
+       
+    }
+
+    .solos {
+        display: flex;
+        width: 60%;
+        margin-bottom: 0;
+    }
+
+
+    .seccion1 article{
+        display: flex;
+        gap:30px
+    }
+
+
+
+    .seccio1{
+        margin-left: auto;
+        padding-left: 0;
+    }
+    
+    .bajar{
+        margin-top: 60px;
+    }
+
+    .new1{
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .separacion{
+        font-size: 20px;
+    }
+
+    .bot{
+        display: flex;
+        flex-direction: row;
+        gap:20px
+    }
+
+    .bot .boton{
+        width: 550px;
+    }
+
+
+    #copy {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #copy img{
+        margin-left: 10px;
+    }
+
+}
